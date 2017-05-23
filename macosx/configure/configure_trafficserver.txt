@@ -1,0 +1,4 @@
+./configure --disable-luajit --with-libxml2=/usr/local/Cellar/libxml2/2.9.2 --with-openssl=/usr/local/Cellar/openssl/1.0.2a-1 --with-xml=libxml2
+
+#export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig"
+#./configure --with-xml=libxml2
