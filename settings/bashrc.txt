@@ -11,8 +11,8 @@
 
 # Get global aliases and functions.
 if [ `uname` == "Linux" ]; then
-	if [ -f ~/.bashrc ]; then
-		. ~/.bashrc
+	if [ -f /etc/bashrc ]; then
+		. /etc/bashrc
 	fi
 fi
 
