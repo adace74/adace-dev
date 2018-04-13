@@ -1,7 +1,7 @@
 #!/bin/bash
 ######################################################################
 #
-# $Id: 31b4516daf5fd8b07a28a0ce184b5f467aaa3d9c $
+# File: startup.sh
 #
 # Description: Quick-hack startup script for Linux.
 #
