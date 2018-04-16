@@ -7,10 +7,12 @@
 #
 ######################################################################
 
-#echo "INFO: Setting ifconfig txqueuelen..."
-#sudo ifconfig eth0 txqueuelen 2048
+echo "INFO: Starting MySQL..."
+sudo /etc/init.d/mysql.server start
 
-echo "INFO: Starting Squid..."
-sudo /usr/local/squid/sbin/squid
+sleep 1
+
+echo "INFO: Starting Apache HTTP..."
+sudo /usr/local/apache2/sbin/apachectl start
 
 echo "INFO: Done."
