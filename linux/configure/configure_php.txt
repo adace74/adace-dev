@@ -1,0 +1,1 @@
+./configure --with-apxs2=/usr/local/apache2/bin/apxs --enable-mbstring --with-mysqli
