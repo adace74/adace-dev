@@ -13,6 +13,6 @@ sudo /etc/init.d/mysql.server start
 sleep 1
 
 echo "INFO: Starting Apache HTTP..."
-sudo /usr/local/apache2/sbin/apachectl start
+sudo /usr/local/apache2/bin/apachectl start
 
 echo "INFO: Done."
