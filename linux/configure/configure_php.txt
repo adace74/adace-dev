@@ -1,1 +1,1 @@
-./configure --with-apxs2=/usr/local/apache2/bin/apxs --enable-mbstring --with-mysqli --with-openssl
+./configure --with-apxs2=/usr/local/apache2/bin/apxs --enable-bcmath --enable-mbstring --enable-sockets --with-freetype-dir=/usr/lib64 --with-gd --with-gettext=/usr/lib64 --with-jpeg-dir=/usr/lib64 --with-mysqli --with-openssl
