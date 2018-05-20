@@ -1,1 +1,1 @@
-./configure --with-serf=/usr/local
+./configure --with-lz4=internal --with-serf=/usr/local/ 

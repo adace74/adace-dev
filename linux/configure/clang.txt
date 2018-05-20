@@ -1,0 +1,6 @@
+1) Unpack sources
+2) Create object dir
+3) cd object dir
+4) cmake -DCMAKE_BUILD_TYPE="Release" -DLLVM_TARGETS_TO_BUILD="X86" ../llvm-6.0.0.src
+5) gmake
+
