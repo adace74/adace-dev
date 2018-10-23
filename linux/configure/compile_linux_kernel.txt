@@ -1,0 +1,24 @@
+#
+# El Repo
+#
+rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
+rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
+yum --disablerepo="*" --enablerepo="elrepo-kernel" list available
+yum --enablerepo=elrepo-kernel install kernel-ml
+
+cd /etc/default/
+cat grub
+grub2-mkconfig -o /boot/grub2/grub.cfg
+
+#
+# By Hand
+#
+Download and untar from kernel.org
+REQUIRED: Copy relevant distribution config from /boot/ into .config
+make menuconfig
+Under "Kernel Hacking" disable "Kernel Debugging".
+make
+sudo make modules_install
+sudo make install
+sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+
