@@ -7,6 +7,9 @@
 #
 ######################################################################
 
+echo "INFO: Install custom DNS settings..."
+sudo cp /etc/resolv.conf.custom /etc/resolv.conf
+
 echo "INFO: Starting MySQL..."
 sudo /etc/init.d/mysql.server start
 
