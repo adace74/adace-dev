@@ -1,0 +1,1 @@
+./configure --with-apxs2=/usr/local/sbin/apxs --disable-debug --enable-bcmath --enable-mbstring --enable-sockets --with-gd --with-mysqli --with-openssl --with-zlib
