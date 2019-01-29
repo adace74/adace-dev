@@ -50,6 +50,10 @@ if [ `uname` == "Darwin" ]; then
 	alias top='top -o cpu -s 5'
 fi
 
+if [ `uname` == "DragonFly" ]; then
+	alias top='top -s 5'
+fi
+
 echo
 echo "System Uptime:"
 uptime
