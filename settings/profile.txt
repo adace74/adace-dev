@@ -34,6 +34,7 @@ export SVN_EDITOR="vi"
 
 # Generic Aliases
 alias antelope='ssh -6 adace@antelope.adamdace.info'
+alias contact='ssh -6 adace@contact.adamdace.info'
 alias gitcommit='git commit --all; git push'
 alias ll='ls -l'
 alias oldantelope='ssh -6 adace@oldantelope.adamdace.info'
@@ -48,6 +49,10 @@ fi
 
 if [ `uname` == "Darwin" ]; then
 	alias top='top -o cpu -s 5'
+fi
+
+if [ `uname` == "DragonFly" ]; then
+	alias top='top -s 5'
 fi
 
 echo
