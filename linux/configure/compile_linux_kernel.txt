@@ -1,24 +1,18 @@
-#
-# El Repo
-#
-rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
-rpm -Uvh http://www.elrepo.org/elrepo-release-7.0-3.el7.elrepo.noarch.rpm
-yum --disablerepo="*" --enablerepo="elrepo-kernel" list available
-yum --enablerepo=elrepo-kernel install kernel-ml
+On A New Server:
 
-cd /etc/default/
-cat grub
-grub2-mkconfig -o /boot/grub2/grub.cfg
+1) sudo vi /etc/default/grub
+2) Make changes.
+3) sudo grub2-mkconfig -o /boot/grub2/grub.cfg 
 
-#
-# By Hand
-#
-Download and untar from kernel.org
-REQUIRED: Copy relevant distribution config from /boot/ into .config
-make menuconfig
-Under "Kernel Hacking" disable "Kernel Debugging".
-make
-sudo make modules_install
-sudo make install
-sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+Linux Kernel Compile:
+
+1) Download and untar from kernel.org
+2) Copy relevant distribution config from /boot/ into .config
+3) make menuconfig
+4) Under "Kernel Hacking" disable "Kernel Debugging".
+5) make
+6) sudo make modules_install
+7) sudo make install
+8) sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+9) sudo reboot
 
