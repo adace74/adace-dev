@@ -1,0 +1,7 @@
+  CFLAGS      C compiler flags
+  LDFLAGS     linker flags, e.g. -L<lib dir> if you have libraries in a
+              nonstandard directory <lib dir>
+
+If necessary, set these to -I/usr/local/include and -L/usr/local/lib
+BEFORE running configure.  Seems to work for git.
+
