@@ -287,8 +287,8 @@ pseudo-device	gif		# IPv6 and IPv4 tunneling
 pseudo-device   lagg
 
 # CARP support
-options		CARP
-pseudo-device	carp
+#options		CARP
+#pseudo-device	carp
 
 # The `bpf' pseudo-device enables the Berkeley Packet Filter.
 # Be aware of the administrative consequences of enabling this!
