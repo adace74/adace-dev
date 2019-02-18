@@ -23,6 +23,7 @@ umask 0022
 
 # Environment
 export CLASSPATH="."
+export EDITOR="vim"
 #export http_proxy="http://webcache.adamdace.info:8080/"
 #export HTTP_PROXY="http://webcache.adamdace.info:8080/"
 export IRCSERVER="irc.mzima.net"
