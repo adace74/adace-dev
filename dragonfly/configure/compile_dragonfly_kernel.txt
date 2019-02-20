@@ -1,7 +1,7 @@
 On a server with sources already checked out:
 
 1) cd /usr/src
-2) sudo make nativekernel KERNCONF=CONTACT
+2) make -j 2 nativekernel KERNCONF=CONTACT
 3) sudo make installkernel KERNCONF=CONTACT
 4) sudo reboot
 
