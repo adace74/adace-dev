@@ -1,0 +1,52 @@
+<adace@contact:~> mount
+/dev/vbd0s1d on / (ufs, soft-updates, local)
+devfs on /dev (devfs, nosymfollow, local)
+/dev/vbd0s1a on /boot (ufs, local)
+procfs on /proc (procfs, local)
+
+1) sudo hammer prune-everything /
+   NOTE: This does the major work of freeing up unused space,
+         specifically by erasing file modification history.
+2) sudo hammer reblock /
+   NOTE: This does the minor work of freeing up unused space,
+         but also defragments the filesystem.
+         Don't expect a lot of new free space by running this command.
+[adace@lizards ~]$ df -h
+Filesystem     Size   Used  Avail Capacity  Mounted on
+ROOT          35.5G  7925M  27.7G    22%    /
+devfs         1024B  1024B     0B   100%    /dev
+/dev/vbd0s1a  1022M   176M   764M    19%    /boot
+procfs        4096B  4096B     0B   100%    /proc
+[adace@lizards ~]$ sudo hammer prune-everything
+Password:
+Badly formed prune command, use:
+hammer prune <softlink-dir>
+hammer prune-everything <filesystem>
+[adace@lizards ~]$ sudo hammer prune-everything /
+Prune //: EVERYTHING
+Prune //: objspace 8000000000000000:0000 7fffffffffffffff:ffff pfs_id 0
+Prune //: prune_min is 0d/00:00:00
+Prune // succeeded
+Pruned 212268/1431059 records (5090 directory entries) and 177607170 bytes
+[adace@lizards ~]$ df -h
+Filesystem     Size   Used  Avail Capacity  Mounted on
+ROOT          35.5G  7885M  27.8G    22%    /
+devfs         1024B  1024B     0B   100%    /dev
+/dev/vbd0s1a  1022M   176M   764M    19%    /boot
+procfs        4096B  4096B     0B   100%    /proc
+[adace@lizards ~]$ sudo hammer reblock /
+reblock start 8000000000000000:0000
+free level 0/8388608
+Reblock / succeeded
+Reblocked:
+    36636/36636 B-Tree nodes
+    150061056/150061056 B-Tree bytes
+    1213705/1213705 data elements
+    7545395772/7545395772 data bytes
+[adace@lizards ~]$ df -h
+Filesystem     Size   Used  Avail Capacity  Mounted on
+ROOT          35.5G  7637M  28.0G    21%    /
+devfs         1024B  1024B     0B   100%    /dev
+/dev/vbd0s1a  1022M   176M   764M    19%    /boot
+procfs        4096B  4096B     0B   100%    /proc
+
