@@ -24,8 +24,7 @@ umask 0022
 # Environment
 export CLASSPATH="."
 export EDITOR="vim"
-#export http_proxy="http://webcache.adamdace.info:8080/"
-#export HTTP_PROXY="http://webcache.adamdace.info:8080/"
+export IRCNAME="Adam Dace"
 export IRCSERVER="irc.mzima.net"
 export MANPATH="/usr/local/man:/usr/share/man:/usr/local/share/man:/usr/X11/share/man:/sw/share/man:/usr/X11/man:/sw/lib/perl5/5.12.3/man:/usr/X11R6/man:/sw/lib/perl5-core/5.12.4/man:/sw/lib/perl5/5.12.4/man"
 export PAGER="less"

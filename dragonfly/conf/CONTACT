@@ -16,7 +16,7 @@ maxusers	0
 
 options 	INET			#InterNETworking
 options 	INET6			#IPv6 communications protocols
-#options 	HAMMER			#Hammer Filesystem
+options 	HAMMER			#Hammer Filesystem
 #options		HAMMER2			#HAMMER2 filesystem
 options		NULLFS			#NULL filesystem
 options 	FFS			#Berkeley Fast Filesystem
