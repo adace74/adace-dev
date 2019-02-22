@@ -1,0 +1,14 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Adam W. Dace
+	email = colonelforbin74@gmail.com
+[protocol]
+	version = 2
+[color]        
+    ui = false
+    branch = false
+    diff = false
+    interactive = false
+    status = false
+    log = false
