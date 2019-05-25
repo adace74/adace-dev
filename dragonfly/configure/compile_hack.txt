@@ -1,4 +1,4 @@
-Hack #1(works on things like git):
+Custom Git Compile:
 
   CFLAGS      C compiler flags
   LDFLAGS     linker flags, e.g. -L<lib dir> if you have libraries in a
@@ -6,8 +6,3 @@ Hack #1(works on things like git):
 
 NOTE: If necessary, set these to -I/usr/local/include and -L/usr/local/lib
 BEFORE running configure.  Seems to work for git.
-
-Hack #2(works on PHP):
-
-NOTE: Just don't do "make -j 2".  Just...don't.  Blah.
-
