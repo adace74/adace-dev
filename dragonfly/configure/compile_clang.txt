@@ -1,0 +1,13 @@
+Compile Using Clang
+-------------------
+
+* Ports: This part is somewhat simple.
+         Simply "make CC=clang CXX=clang" when compiling from port.
+
+* PHP(and other packages): This part is a little more complex.
+                           export CC="clang"
+                           Then run configure.
+
+  NOTE: Don't run PHP with "make -j 2", for some reason then it
+        won't link properly.
+
