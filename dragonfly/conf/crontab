@@ -10,7 +10,7 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin
 */5	*	*	*	*	root	/usr/libexec/atrun
 #
 # rotate log files every hour, if necessary
-0	1	*	*	*	root	newsyslog
+0	*	*	*	*	root	newsyslog
 #
 # do daily/weekly/monthly maintenance
 0	2	*	*	*	root	periodic daily
