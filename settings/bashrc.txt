@@ -31,7 +31,7 @@ export PAGER="less"
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/X11R6/bin:/usr/local/gradle/bin:/usr/local/llvm80/bin:/usr/local/mysql/bin"
 #export PS1="<\u@\h:\w> "
 export PS1="\[\033[0;34m\]<\[\033[1;32m\]\u\[\033[1;34m\]@\[\033[1;32m\]\h\[\033[1;34m\]:\[\033[1;36m\]\w\[\033[0;34m\]>\[\033[0m\] "
-export SVN_EDITOR="vi"
+export SVN_EDITOR="vim"
 
 # Generic Aliases
 alias antelope='ssh -6 adace@antelope.adamdace.info'
@@ -40,6 +40,7 @@ alias gitcommit='git commit --all; git push'
 alias ll='ls -l'
 alias oldantelope='ssh -6 adace@oldantelope.adamdace.info'
 alias rxvt='rxvt -fg cyan -bg black -fn "lucidasanstypewriter-18" -sl 10000'
+alias vi='vim'
 #alias xemacs='xemacs -fg cyan -bg black'
 
 # Platform Aliases
