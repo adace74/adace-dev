@@ -1,0 +1,19 @@
+#!/bin/sh
+#
+# $DragonFly: src/etc/rc.d/vnstatd,v 1.2 2005/11/19 21:47:32 swildner Exp $
+#
+
+# PROVIDE: vnstatd
+# REQUIRE: DAEMON
+# BEFORE:  LOGIN
+
+. /etc/rc.subr
+
+name="vnstatd"
+rcvar=`set_rcvar`
+pidfile="/var/run/${name}.pid"
+command="/usr/local/sbin/${name}"
+command_args="-d --pidfile $pidfile"
+
+load_rc_config $name
+run_rc_command "$1"
