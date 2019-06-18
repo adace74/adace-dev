@@ -1,9 +1,9 @@
 #!/usr/local/bin/bash
 ######################################################################
 #
-# File: startup.sh
+# File: rsync_download.sh
 #
-# Description: Quick-hack startup script for Linux.
+# Description: Simple mirror automation script.
 #
 ######################################################################
 
