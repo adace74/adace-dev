@@ -30,22 +30,11 @@ echo "----------------------------------------------------------------------"
 echo
 
 echo "INFO:"
-echo "INFO: Downloading DragonFly Old RELEASE Packages..."
-echo "INFO:"
-
-cd $LOCAL_DIR/dports/dragonfly:5.4:x86:64/
-$RSYNC $RSYNC_FLAGS $RSYNC_URL/dports/dragonfly:5.4:x86:64/ .
-
-echo
-echo "----------------------------------------------------------------------"
-echo
-
-echo "INFO:"
 echo "INFO: Downloading DragonFly RELEASE Packages..."
 echo "INFO:"
 
-cd $LOCAL_DIR/dports/dragonfly:5.6:x86:64/
-$RSYNC $RSYNC_FLAGS $RSYNC_URL/dports/dragonfly:5.6:x86:64/ .
+#cd $LOCAL_DIR/dports/dragonfly:5.6:x86:64/
+#$RSYNC $RSYNC_FLAGS $RSYNC_URL/dports/dragonfly:5.6:x86:64/ .
 
 echo
 echo "----------------------------------------------------------------------"
