@@ -1,1 +1,1 @@
-./configure --with-apxs2=/usr/local/sbin/apxs --disable-debug --enable-bcmath --enable-mbstring --enable-sockets --with-gd --with-mysqli --with-openssl --with-zlib --with-jpeg-dir=/usr/local
+./configure --with-apxs2=/usr/local/sbin/apxs --disable-debug --enable-bcmath --enable-mbstring --enable-mysqlnd --enable-sockets --with-gd --with-mysqli --with-openssl --with-zlib --with-jpeg-dir=/usr/local
