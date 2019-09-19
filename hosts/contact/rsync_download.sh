@@ -13,8 +13,8 @@
 RSYNC="rsync"
 RSYNC_FLAGS="--archive --delete --ipv6 --verbose"
 #RSYNC_URL="rsync://avalon.dragonflybsd.org"
-#RSYNC_URL="rsync://mirror.bytemark.co.uk/dragonflybsd"
-RSYNC_URL="rsync://mirrors.coreix.net/mirrors/dragonflybsd"
+RSYNC_URL="rsync://mirror.bytemark.co.uk/dragonflybsd"
+#RSYNC_URL="rsync://mirrors.coreix.net/mirrors/dragonflybsd"
 LOCAL_DIR="/web/mirror.adamdace.info/dragonflybsd"
 
 echo "INFO:"
