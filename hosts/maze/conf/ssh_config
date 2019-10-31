@@ -47,14 +47,6 @@
 
 Host *
 	SendEnv LANG LC_*
-
-# XAuthLocation added by XQuartz (http://www.xquartz.org)
-Host *
-    XAuthLocation /opt/X11/bin/xauth
-
-#
-# Custom settings.
-#
-Host *
+    TCPKeepAlive no
     ServerAliveInterval 300
-    ServerAliveCountMax 4
+    ServerAliveCountMax 6
