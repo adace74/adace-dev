@@ -14,7 +14,6 @@ RSYNC="rsync"
 RSYNC_FLAGS="--archive --delete --ipv6 --verbose"
 #RSYNC_URL="rsync://avalon.dragonflybsd.org"
 RSYNC_URL="rsync://mirror.bytemark.co.uk/dragonflybsd"
-#RSYNC_URL="rsync://mirrors.coreix.net/mirrors/dragonflybsd"
 LOCAL_DIR="/web/mirror.adamdace.info/dragonflybsd"
 
 echo "INFO:"
@@ -29,16 +28,16 @@ echo
 echo "----------------------------------------------------------------------"
 echo
 
-#echo "INFO:"
-#echo "INFO: Downloading DragonFly RELEASE Packages..."
-#echo "INFO:"
+echo "INFO:"
+echo "INFO: Downloading DragonFly DEVELOPMENT Packages..."
+echo "INFO:"
 
-#cd $LOCAL_DIR/dports/dragonfly:5.6:x86:64/
-#$RSYNC $RSYNC_FLAGS $RSYNC_URL/dports/dragonfly:5.6:x86:64/ .
+cd $LOCAL_DIR/dports/dragonfly:5.8:x86:64/
+$RSYNC $RSYNC_FLAGS $RSYNC_URL/dports/dragonfly:5.8:x86:64/ .
 
-#echo
-#echo "----------------------------------------------------------------------"
-#echo
+echo
+echo "----------------------------------------------------------------------"
+echo
 
 echo "INFO:"
 echo "INFO: Downloads complete."

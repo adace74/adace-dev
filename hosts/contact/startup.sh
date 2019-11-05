@@ -7,7 +7,7 @@
 #
 ######################################################################
 
-echo "INFO: Starting vnstatd..."
-sudo /usr/local/sbin/vnstatd -d
+echo "INFO: Setting custom kernel param..."
+sudo /sbin/sysctl -w kern.maxvnodes=50000
 
 echo "INFO: Done."
