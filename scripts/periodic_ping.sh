@@ -13,7 +13,7 @@ do
     echo -n "INFO:"
     date
     echo "INFO: ----------------------------------------"
-    ping -c 8 antelope.adamdace.info
+    ping6 -c 8 antelope.adamdace.info
     echo "INFO: ----------------------------------------"
     sleep 3600
 done
