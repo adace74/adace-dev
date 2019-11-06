@@ -1,0 +1,11 @@
+DragonFly Compile World
+-----------------------
+
+1) cd /usr/src
+2) make -j 2 buildworld
+3) make -j 2 buildkernel
+4) sudo make installkernel
+5) sudo make installworld
+6) sudo make upgrade
+7) sudo reboot
+
