@@ -13,9 +13,9 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin
 #0	*	*	*	*	root	newsyslog
 #
 # do daily/weekly/monthly maintenance
-0	2	*	*	*	root	periodic daily
-30	2	*	*	6	root	periodic weekly
-0	3	1	*	*	root	periodic monthly
+0	0	*	*	*	root	periodic daily
+30	0	*	*	6	root	periodic weekly
+0	1	1	*	*	root	periodic monthly
 #
 # time zone change adjustment for wall cmos clock,
 # does nothing, if you have UTC cmos clock.
