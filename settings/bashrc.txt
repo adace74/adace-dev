@@ -34,8 +34,8 @@ export PS1="\[\033[0;34m\]<\[\033[1;32m\]\u\[\033[1;34m\]@\[\033[1;32m\]\h\[\033
 export SVN_EDITOR="vim"
 
 # Generic Aliases
-alias antelope='ssh -4 adace@antelope.adamdace.info'
-alias contact='ssh -4 adace@contact.adamdace.info'
+alias antelope='ssh -6 adace@antelope.adamdace.info'
+alias contact='ssh -6 adace@contact.adamdace.info'
 alias gitcommit='git commit --all; git push'
 alias ll='ls -l'
 alias loopuptime='while true; do uptime; sleep 10; done'
