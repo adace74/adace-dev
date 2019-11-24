@@ -7,7 +7,7 @@
 #
 ######################################################################
 
-echo "INFO: Setting custom kernel param..."
-sudo /sbin/sysctl -w kern.maxvnodes=50000
+echo "INFO: Install custom DNS settings..."
+sudo cp /etc/resolv.conf.custom /etc/resolv.conf
 
 echo "INFO: Done."

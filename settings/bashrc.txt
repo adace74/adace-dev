@@ -58,3 +58,7 @@ fi
 if [ `uname` == "DragonFly" ]; then
 	alias top='top -s 5'
 fi
+
+if [ `uname` == "FreeBSD" ]; then
+    alias top='top -s 5'
+fi
