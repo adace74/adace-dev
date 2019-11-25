@@ -1,0 +1,3 @@
+./configure --with-curl=/usr/local/ --with-iconv=/usr/local/
+
+NOTE: Also available is --with-openssl=/usr/local/
