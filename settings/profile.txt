@@ -35,7 +35,7 @@ export SVN_EDITOR="vim"
 
 # Generic Aliases
 alias antelope='ssh -6 adace@antelope.adamdace.info'
-alias contact='ssh -6 adace@contact.adamdace.info'
+alias cavern='ssh -6 adace@cavern.adamdace.info'
 alias gitcommit='git commit --all; git push'
 alias ll='ls -l'
 alias loopuptime='while true; do uptime; sleep 10; done'
@@ -57,6 +57,10 @@ fi
 
 if [ `uname` == "DragonFly" ]; then
 	alias top='top -s 5'
+fi
+
+if [ `uname` == "FreeBSD" ]; then
+    alias top='top -s 5'
 fi
 
 echo
