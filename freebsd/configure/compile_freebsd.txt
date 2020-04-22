@@ -1,0 +1,12 @@
+FreeBSD OS Compile & Upgrade:
+
+1) cd /usr/src
+2) svn update (assumes you have source installed)
+3) make -j 2 buildworld
+4) make -j 2 buildkernel
+5) sudo make installkernel
+6) sudo reboot
+7) sudo make installworld
+8) sudo mergemaster -Ui
+9) sudo reboot
+
