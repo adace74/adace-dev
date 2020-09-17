@@ -12,3 +12,5 @@
     interactive = false
     status = false
     log = false
+[pull]
+	rebase = false
