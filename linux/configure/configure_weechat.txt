@@ -1,0 +1,1 @@
+<adace@antelope:~/src/weechat-2.9/build> cmake -DENABLE_GUILE=off -DENABLE_LUA=off -DENABLE_PHP=off -DENABLE_PYTHON=off -DENABLE_RUBY=off -DENABLE_SPELL=off -DENABLE_TCL=off ..
