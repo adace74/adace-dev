@@ -1,18 +1,26 @@
 Generic Instructions:
 
-1) Obtain sources(llvm, cfe, lld).
+1) Obtain sources(llvm, cfe).
 2) Unpack sources.
 3) Create object dir.
 4) Move cfe and lld into position, under "tools".
 5) cd object dir.
-6) cmake -DCMAKE_BUILD_TYPE="Release" -DLLVM_TARGETS_TO_BUILD="X86" ../llvm-6.0.1.src
+6) cmake -DCMAKE_BUILD_TYPE="Release" ../llvm-6.0.1.src
 7) gmake
 
 Subversion Instructions:
 
 svn co http://llvm.org/svn/llvm-project/llvm/tags/RELEASE_601/final llvm
 svn co http://llvm.org/svn/llvm-project/cfe/tags/RELEASE_601/final cfe
-svn co http://llvm.org/svn/llvm-project/lld/tags/RELEASE_601/final lld
 
 That's about it, then just follow the usual compile instructions.
+
+LLD Instructions:
+1) Obtain sources(lld, libunwind).
+2) Untar libunwind.
+3) Rename to lld source directory name.
+4) Untar lld.
+5) cd object dir.
+6) cmake -DCMAKE_BUILD_TYPE="Release" ../lld-6.0.1.src 
+7) gmake
 
