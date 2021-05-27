@@ -1,7 +1,7 @@
 FreeBSD OS Compile & Upgrade:
 
 1) cd /usr/src
-2) svn update (assumes you have source installed)
+2) git pull (assumes you have source installed)
 3) make -j 2 buildworld
 4) make -j 2 buildkernel
 5) sudo make installkernel
@@ -9,4 +9,9 @@ FreeBSD OS Compile & Upgrade:
 7) sudo make installworld
 8) sudo mergemaster -Ui
 9) sudo reboot
+
+FreeBSD Git Locations:
+
+1) OS Source:    git clone https://git.freebsd.org/src.git
+2) Ports Source: git clone https://git.freebsd.org/ports.git
 
