@@ -13,5 +13,9 @@ FreeBSD OS Compile & Upgrade:
 FreeBSD Git Locations:
 
 1) OS Source:    git clone https://git.freebsd.org/src.git
+
+NOTE: Easy example of how to checkout a FreeBSD branch:
+      git clone --branch releng/13.0 https://git.freebsd.org/src.git
+
 2) Ports Source: git clone https://git.freebsd.org/ports.git
 
