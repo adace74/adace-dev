@@ -17,5 +17,8 @@ FreeBSD Git Locations:
 NOTE: Easy example of how to checkout a FreeBSD branch:
       git clone --branch releng/13.0 https://git.freebsd.org/src.git
 
+NOTE: Also, use "git checkout" to easily switch branches(including "main").
+
+
 2) Ports Source: git clone https://git.freebsd.org/ports.git
 
